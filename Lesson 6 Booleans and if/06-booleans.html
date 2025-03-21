@@ -9,23 +9,39 @@
     <h1>Booleans</h1>
     <p>In JavaScript, true and false are two distinct values. They are used to represent logical truth values.</p>
     <script>
-        const age = 15;
+        // const age = 15;
 
-        if (true) {
-            console.log("This runs if the statement is true");
-        } else{
-            console.log("This is false");
-        }
+        // if (true) {
+        //     console.log("This runs if the statement is true");
+        // } else{
+        //     console.log("This is false");
+        // }
 
         // to check if someone is old enough to drive
-        if (age >= 16) {
-            console.log("You are old enough to drive");
-        } else if (age>=14){
-            console.log("You are almost there");
-        } else {
-            console.log("You are not old enough to drive");
+        // if (age >= 16) {
+        //     console.log("You are old enough to drive");
+        // } else if (age>=14){
+        //     console.log("You are almost there");
+        // } else {
+        //     console.log("You are not old enough to drive");
+        // }
+        if (5){
+            console.log("truthy");
         }
 
+        const cartQuantity = 5;
+        if (cartQuantity ) {
+            console.log("Cart has products");
+        }
+
+        let hour = 19;
+        const name = 'Mohammad';
+        if (6<hour && hour < 12) {
+            console.log(`Good morning ${name} `);
+        } else if (13<=hour && hour<17){
+            console.log(`Good afternoon ${name} `);
+        } else if (17<hour) {
+            console.log(`Good night ${name} `);};
     </script>
 </body>
 </html>
