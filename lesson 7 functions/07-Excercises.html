@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roch paper Scissors</title>
+</head>
+
+<body>
+    <p>
+        Celcius and Fahrenheit
+    </p>
+
+    <script>
+        function convertToFarenheit(celciuSDegree) {
+            farenheit = (celciuSDegree * 9 / 5) + 32
+            console.log(celciuSDegree + "°C is equal to " + farenheit + "°F")
+        }
+
+
+        function convertToCelcius(fanreheitdegree) {
+            celsius = (fanreheitdegree - 32) * 5 / 9
+            console.log(fanreheitdegree + "°F is equal to " + celsius + "°C")
+        }
+
+        function convertTemperatur(degrees, unit) {
+            if (unit === 'F'){
+                convertToCelcius(degrees);
+            } else if (unit === 'C'){
+                convertToFarenheit(degrees);
+            }
+        }
+        convertTemperatur(36, 'C')
+
+    </script>
+</body>
+
+</html>
