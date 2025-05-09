@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <p>
+        <h1>Object</h1>
+        make codes more organised than<br>
+        An Object groups multiple values together<br>
+        Objects are created using curly braces {}<br>
+        Objects can contain properties and methods<br>
+        Properties are named data values that can be accessed using dot notation or bracket notation<br>
+        Methods are functions that can be called on objects<br>
+        we can change the properties of an object using dot notation or bracket notation ===>         product.price = 1500<br>
+
+        <h3>Two different ways to reach an element in an object</h3>
+        console.log(product2.name) // to access a property in an object<br>
+        console.log(product2['name']); // to access a property by Brqacket Notation
+
+        <br>
+        <h3>Why we use bracket Notation?</h3>
+        <p>
+            Sometimes for example when u have: <br><br>
+            console.log(product2.delivery-time) <br><br>
+            it does not understand that the property is talking about an attribute called <em>delivery time</em>. it sees the "-" as a minus and it wants to subtract the time from Delivery which is wrong because you dont want to do it. So you put it in brackets to show this is a property. <br><br>
+            console.log(product2['delivery-time']) // will work correctly
+        </p>
+ 
+
+    </p>
+    <script>
+        /*
+        const product = {
+            name: "Laptop",
+            price: 1200,
+            description: "High-end laptop with 16GB RAM"
+        }
+
+        console.log(product)
+        console.log(product.name) // to access a property in an object
+        console.log(product.description)
+        console.log(product.price)
+        product.price = 1500
+        console.log(product.price)
+
+        //a property that does not exist
+        product.newProperty = true;
+        console.log(product);
+
+        delete product.newProperty; // delete a property
+        console.log(product);
+        */
+        const product2 = {
+            name: "Phone",
+            price: 500,
+            description: "High-end smartphone with 6GB RAM"
+        }
+        console.log(product2)
+        console.log(product2.name) // to access a property in an object
+        console.log(product2['name']); // to access a property by Brqacket Notation
+    </script>
+</body>
+</html>

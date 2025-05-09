@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Roch paper Scissors</title>
+    </head>
+
+    <body>
+        <p>
+            Lengh Converting
+        </p>
+
+        <script>
+            function convertLenght(lenght, from, to) {
+                let conversionFactor = 0;
+                if (from == 'km' && to == 'miles') {
+                    conversionFactor = lenght * 1.6
+                } else if (from == 'miles' && to == 'km') {
+                    conversionFactor = lenght / 1.6
+                } else if (from === to) {
+                    conversionFactor = lenght
+                }
+                const result = conversionFactor.toFixed(2);
+                console.log(`${lenght} ${from} is equal to ${result} ${to} `);
+            }
+            convertLenght(24,'km','km')
+            
+        </script>
+    </body>
+
+</html>
